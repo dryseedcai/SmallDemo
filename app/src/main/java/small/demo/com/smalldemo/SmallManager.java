@@ -52,11 +52,11 @@ public class SmallManager {
         //表明需要从外部加载插件。
         Small.setLoadFromAssets(true);
         try {
-            File dstFile = new File(FileUtils.getInternalBundlePath(), "com.demo.small.update.app.upgrade.apk");
+            File dstFile = new File(FileUtils.getInternalBundlePath(), "small.demo.com.smalldemo.apk");
             if (!dstFile.exists()) {
                 boolean create = dstFile.createNewFile();
             }
-            File srcFile = new File(Environment.getExternalStorageDirectory().toString() + "/Small/" + "libcom_demo_small_update_app_upgrade.so");
+            File srcFile = new File(Environment.getExternalStorageDirectory().toString() + "/Small/" + "libcom_demo_small_app_main.so");
             FileInputStream inputStream = new FileInputStream(srcFile);
             OutputStream outputStream = new FileOutputStream(dstFile);
             byte[] buffer = new byte[1024];

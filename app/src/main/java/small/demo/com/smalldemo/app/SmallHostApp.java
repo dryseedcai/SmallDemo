@@ -15,14 +15,13 @@ public class SmallHostApp extends Application {
     private static Context sContext;
 
     public SmallHostApp() {
-
+        Small.preSetUp(this);
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
         sContext = this;
-        Small.preSetUp(this);
         SmallManager.getInstance().requestInitPlug();
     }
 
