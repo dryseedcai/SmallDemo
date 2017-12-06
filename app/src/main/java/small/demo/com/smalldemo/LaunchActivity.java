@@ -34,5 +34,8 @@ public class LaunchActivity extends AppCompatActivity {
         Small.openUri("detail", LaunchActivity.this);
     }
 
+    public void loadUpgrade(View view) {
+        SmallManager.getInstance().requestUpgrade();
+    }
 
 }
