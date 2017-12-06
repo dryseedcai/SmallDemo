@@ -13,8 +13,18 @@
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
         android:gravity="center"
-        android:onClick="startPlugActivity"
-        android:text="Start Plug Activity"
+        android:onClick="startMainDemoActivity"
+        android:text="Start Main Demo Activity"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="startStubDemoActivity"
+        android:text="Start Stub Demo Activity"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

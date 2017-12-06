@@ -12,7 +12,7 @@ public class LaunchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_launch);
         setUp();
     }
 
@@ -26,8 +26,13 @@ public class LaunchActivity extends AppCompatActivity {
         });
     }
 
-    public void startPlugActivity(View view) {
+    public void startMainDemoActivity(View view) {
         Small.openUri("main", LaunchActivity.this);
     }
+
+    public void startStubDemoActivity(View view) {
+        Small.openUri("detail", LaunchActivity.this);
+    }
+
 
 }
