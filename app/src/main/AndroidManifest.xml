@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="small.demo.com.smalldemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".app.SmallHostApp"
         android:allowBackup="true"
